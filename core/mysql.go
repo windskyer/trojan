@@ -30,15 +30,15 @@ type Mysql struct {
 
 // User 用户表记录结构体
 type User struct {
-	ID          uint
-	Username    string
-	Password    string
-	EncryptPass string
-	Quota       int64
-	Download    uint64
-	Upload      uint64
-	UseDays     uint
-	ExpiryDate  string
+	ID          uint   `json:"ID"`
+	Username    string `json:"Username"`
+	Password    string `json:"Password"`
+	EncryptPass string `json:"EncryptPass"`
+	Quota       int64  `json:"Quota"`
+	Download    uint64 `json:"Download"`
+	Upload      uint64 `json:"Upload"`
+	UseDays     uint   `json:"UseDays"`
+	ExpiryDate  string `json:"ExpiryDate"`
 }
 
 // PageQuery 分页查询的结构体
